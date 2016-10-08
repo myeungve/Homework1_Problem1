@@ -44,7 +44,7 @@ void drawDoughnut(const int& i0, const int& j0, int r, const float& red, const f
 	{
 		for (int j = 0; j < height; j++)
 		{
-			if ((i - i0) * (i - i0) + (j - j0) * (j - j0) - r * r < 0 && (i - i0) * (i - i0) + (j - j0) * (j - j0) - (r - 15) * (r - 15) > 0)
+			if ((i - i0) * (i - i0) + (j - j0) * (j - j0) - r * r < 0 && (i - i0) * (i - i0) + (j - j0) * (j - j0) - (r - 10) * (r - 10) > 0)
 			{
 				drawPixel(i, j, red, green, blue);
 			}

@@ -2,22 +2,23 @@
 #include "Draw.h"
 #include "Circle.h"
 #include "Lines.h"
-#include "Arrow.h"
 #include "Square.h"
+#include "Arrow.h"
 
 void drawMyPainting()
 {
 	/* White background */
 	std::fill_n(pixels, width*height * 3, 1.0f);
 
+	// Icons
 	Slash a(100, 650);
 	a.draw();
 	Slash aa(100, 320);
 	aa.draw();
 
-	Doughnut b(370, 685, 40);
+	Doughnut b(395, 685, 30);
 	b.draw();
-	Doughnut bb(370, 355, 40);
+	Doughnut bb(395, 355, 30);
 	bb.draw();
 
 	Square c(615, 650, 720);
@@ -30,9 +31,9 @@ void drawMyPainting()
 	Cross dd(870, 320, 940, 390);
 	dd.draw();
 
-	DownArrow e(1150, 650, 720);
+	DownArrow e(1160, 650, 720);
 	e.draw();
-	DownArrow ee(1150, 320, 390);
+	DownArrow ee(1160, 320, 390);
 	ee.draw();
 
 	RightArrow f(100, 530);
@@ -40,9 +41,9 @@ void drawMyPainting()
 	RightArrow ff(100, 190);
 	ff.draw();
 
-	A g(340, 500, 410, 570);
+	A g(360, 500, 430, 570);
 	g.draw();
-	A gg(340, 150, 410, 220);
+	A gg(360, 155, 430, 225);
 	gg.draw();
 
 	Vertical h(650, 500, 570);
@@ -50,14 +51,14 @@ void drawMyPainting()
 	Vertical hh(650, 150, 220);
 	hh.draw();
 
-	LeftArrow i(870, 530);
+	LeftArrow i(867, 530);
 	i.draw();
-	LeftArrow ii(870, 190);
+	LeftArrow ii(867, 190);
 	ii.draw();
 
-	UpArrow j(1150, 500, 570);
+	UpArrow j(1160, 500, 570);
 	j.draw();
-	UpArrow jj(1150, 150, 220);
+	UpArrow jj(1160, 150, 220);
 	jj.draw();
 
 }
